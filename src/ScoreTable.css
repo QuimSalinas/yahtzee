@@ -1,0 +1,46 @@
+.ScoreTable {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.ScoreTable table {
+  width: 100%;
+  margin: 0 auto;
+  margin-right: 1em;
+}
+
+.ScoreTable-section {
+  vertical-align: top;
+  width: 100%;
+  display: flex;
+}
+
+.ScoreTable-section-lower {
+  margin-top: 25px;
+}
+
+.ScoreTable-Title{
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  background: linear-gradient(-45deg, #673ab7, #9c27b0);
+  background-size: 400% 400%;
+  color: white;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
